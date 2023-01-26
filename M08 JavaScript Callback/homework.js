@@ -7,6 +7,10 @@ function mayuscula(nombre) {
    // Tu código:
 
   return nombre.charAt(0).toUpperCase() + nombre.slice(1);
+  //let primera = nombre[0],toUpperCase()
+  //for(let i=1 ; i<nombre.length ; i++){
+   // primera = primera + nombre[i]
+  //} return primera
 }
 
 function invocarCallback(cb) {
@@ -38,6 +42,12 @@ function sumarArray(arrayOfNumbers, cb) {
       arraySumado += arrayOfNumbers[i]
    }
    cb(arraySumado);
+
+   // let resultado = arrayOfNumbers.reduce(
+   //   acumulador,index)=> acumulador + index,0);
+   //          cb(resultado);
+   //=============================================
+   
 
 }
 
@@ -78,7 +88,7 @@ function filter(arrayOfStrings) {
       }
    }
    return nuevoArreglo;
-
+// return arrayOfString.filter(element => element[0] ==='a')
 }
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
